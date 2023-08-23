@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordaynn's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <style>
+        .swiper {
+            width: 600px;
+            height: 850px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h3>My Portfolio</h3>
+        <div class="menu-btn"></div>
+        
+        <div class = "navigation">
+            <div class = "navigation-items">
+                <a href="#aboutme">About me</a>
+                <a href="#project">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#skill">Skills</a>
+                <a href="#connect">Connect</a>
+            </div>
+        </div>
+    </header>
+      <div id="content">
+    <section class="home">
+        <video class = "video-slide" src="BgVis.mp4"autoplay muted loop></video>
+        <div class="content">
+            <h1>Jordaynn<br><span>Alawode</span></h1>
+            <h3><span class="hover-pink">I...</span> <span class="hover-redpink">Code,</span> <span class="hover-darkpurp">Design,</span> <span class="hover-lightpink">and Innovate</span></h3>
+            <p> As a UX design intern, I am passionate about creating user-centric designs that solve problems and enhance user experiences.
+                With a strong foundation in design principles, research, and prototyping, I am eager to apply my skills in a
+                real-world setting and contribute to your team.</p>
+                <button class="header-button" onclick="scrollToSection('#aboutme')">Read me</button>
+
+            </div>
+            <div class="media-icons">
+                <a href="#"> <i class="fab fa-github-f"></i></a>
+                <a href="#"> <i class="fab fa-instagram-f"></i></a>
+            </div>
+    </section>
+
+    <script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const menuBtn = document.querySelector(".menu-btn");
+
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+    });
+
+    </script>
+ </body>
+
+    <!-- Slider main container -->
+    
+ <!-- this is going to be my about me part of the website -->
+<section id="aboutme">
+    <h3 style="text-align:center;">About Me</h3>
+    <div class="container">
+		<!-- <div class="img-container"> -->
+<!-- section for the image to be contained in, in this case a fake phone -->
+        <!-- <img class="img-responsive shake" src="/NamePhone.PNG" width="650" height="850"> -->
+<!-- assigning each photo to a photo slider -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img width="600" src="/NamePhone.PNG" /></div>
+      <div class="swiper-slide"><img width="600" src="/HeritagePhone.PNG" /></div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+          el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+          el: '.swiper-scrollbar',
+      },
+  });
+</script> 
+
+</section>
+
+<section id = "project">
+    <h3 style="text-align:center;">Projects</h3>
+    <h4 style="text-align:center;">
+        <a style="color: rgb(9, 41, 93); text-decoration: none; text-shadow: 0 0 10px rgb(204, 206, 231);">Click the pictures for the link!</a>
+      </h4>
+    <div class="container">
+		<div class="img-container">
+            <a href="https://github.com/j0rdaynn/SocialMediaInformation-1.0-pc">
+                <img src="/LemonadeFace_StartIMG.png" alt="RenpyImg" width="450" height="250">
+                <!-- <img src="/LemonadeFace_StartIMG.png" alt="RenpyImg" width="450" height="250" class="animated-img"> -->
+              </a>
+              <center>
+                <h2>
+                  An interactive and multiple choice novel game developed
+                  <br> using the Ren'Py engine and programmed in Visual Studio Code.
+                  <br> As a first semester computer science student,
+                  <br> this project demonstrates your proficiency in programming using Python and showcases
+                  <br> my ability to create engaging and interactive games.
+                  <br> The game features multiple story paths that lead to different endings, visuals, and sound effects to
+                  <br> enhance the gaming experience, and an easy-to-use interface for players to navigate through the game.
+                </h2>
+              </center>
+              <a href="https://docs.google.com/presentation/d/1lNIHKKHTwis_9Gvri27aiw2qQlCs9XH-FwUXbXGLtWY/edit?usp=sharing">
+                <img src="/GoogleSlides.PNG" alt="GoogleSlides" width= "50" height="50">
+                 </a>
+            </div>
+            </div>3
+    <div class="container">
+		<div class="img-container">
+              <a href="https://www.figma.com/file/K2ZylHI6u0nv0m835sMy9Y/SignOut?type=whiteboard&t=rPCjy3lblCmUBa2k-1">
+                <img src="/Signout_TitleScreen.PNG" alt="FigmaApp" width="200" height="350">
+              </a>
+              <h2>
+                A groundbreaking advancement in technology that strives to break language barriers and create a community for unity 
+                <br> and an expansion of comprehension. 
+                <br> It offers an application that allows users to input text or audio, 
+                <br> and the system will output a visual display of the phrase in sign language. 
+              </h2>
+              <a href="https://docs.google.com/presentation/d/1xkahW70ku0lDLu09V8efM0wLVgniH3z1mk1xsZvnSAE/edit#slide=id.g100e78291a0_0_16">
+                <img src="/GoogleSlides.PNG" alt="GoogleSlides" width= "50" height="50">
+              </a>
+      </div>
+  			</div>
+            <div></div>
+          <div class="container">
+		<div class="img-container">
+            <a href="https://github.com/jerrybenn/CodeBreakers">
+                <img src="/TetrisProj.png" alt="JavaTetris" width="350" height="250">
+              </a>
+              <h2>
+                A collaborative effort that resulted in the creation 
+                <br> of a fun and interactive game called Tetris. The game was developed using Java and a Raspberry Pi 
+                <br> and servo code that enabled a candy dispenser to output a message and dispense candy 
+                <br> when someone completed the "word of the day." The dispenser was designed using a 3D printer, 
+                <br>adding a personalized touch to the project. This project is a great example of how technology can be used 
+                <br> to create a unique and interactive experience that combines gaming and real-world rewards. 
+              </h2>
+              <a href="https://studentsdesu-my.sharepoint.com/:p:/g/personal/jaalawode22_students_desu_edu/EeT8eqQhX4BJsLyvWiOVecABRye19TJE2O3RA5l_0qeI4A?e=jF9reF">
+                <img src="/PowerpointPic.PNG" alt="PowerpointPic" width= "50" height="50">
+              </a>
+                <a href="https://sites.google.com/view/thecodebreakers/home">
+                    <img src="/GoogleSitePic.PNG" alt="GoogleSitePic" width= "50" height="50">
+                </a>
+		    </div>
+
+
+</section>
+
+<section id = "resume">
+    <h3 style="text-align:center;">Resume</h3>
+    <img width="600" src="/resume phone pic.PNG" /></div>
+</section>
+
+<section id = "skill">
+  <div class="img-container"><h3 style="text-align:center;">Skills</h3></div>
+
+</section>
+
+<section id = "connect">
+<div class="contact">
+  <form onsubmit="sendEmail(); reset(); return false;"> 
+    <h4 style="text-align:center;">Connect with me!</h4>
+        <input style="text-align: center" type="text" id="name" placeholder="Your Name" required>
+        <br>
+        <input style="text-align: center" type="email" id="email" placeholder="Your Email" required>
+        <br>
+        <input style="text-align: center" type="text"  id="number" placeholder="Phone Number" required>
+        <br>
+        <textarea style="text-align: center" id="message" rows="3" placeholder="Leave comments!" required></textarea>
+        <button type="submit">Submit</button> 
+   </form>
+
+
+</section>
+    
+    <!-- <body -->
+    
+    <style>
+       
+    </style>
+</html>
